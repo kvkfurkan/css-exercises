@@ -2,6 +2,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
 }
 
 .header {
@@ -26,4 +30,58 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+/*My Solution*/
+
+a{
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin:0;
+  
+}
+
+.header{
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  flex: 1;
+}
+
+.sidebar{
+  padding: 16px;
+  flex-shrink: 0;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin: 48px;
+}
+
+.card{
+  width: 300px;
+  padding: 16px;
 }
